@@ -107,6 +107,8 @@
   maskToggle.addEventListener('change', ()=>{
     const masked = maskToggle.checked;
     resultEl.type = masked ? 'password' : 'text';
+    plaintextEl.type = masked ? 'password' : 'text';
+    passEl.type = masked ? 'password' : 'text';
   });
 
   revealBtn.addEventListener('click', ()=>{
